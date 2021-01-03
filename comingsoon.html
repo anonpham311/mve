@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--load font awesome-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- GG FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- selfmade CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FROALA CSS -->
+    <link type="text/css" rel="stylesheet" href="css/froala_blocks.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/FAVICON.png" type="images/png">
+
+    <title>Coming soon</title>
+    <style>
+      /* Set height to 100% for body and html to enable the background image to cover the whole page: */
+      body, html {
+        height: 100%
+      }
+      
+      .bgimg {
+        background-image: url(images/bg-soon.gif);
+        background-position: center;
+        background-size: cover;
+        /* Full-screen */
+        height: 100%;
+        /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+        position: relative;
+        /* Add a white text color to all elements inside the .bgimg container */
+        color: white;
+        /* Set the font-size to 25 pixels */
+        font-size: 25px;
+      }
+
+      /* Position text in the middle */
+      .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      /* Style the <hr> element */
+      hr {
+        margin: auto;
+        width: 40%;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- LOGO HEADER -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/LOGO blue transparent.png" width="135" height="60" class="d-inline-block align-top" alt="" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- NAVS -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <!-- HOME -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <!-- ABOUT -->
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <!-- COURSES -->
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Courses
+              </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="beginners.html">Vietnamese for Beginners</a>
+                  <a class="dropdown-item" href="comingsoon.html">Intermediate Vietnamese</a>
+                  <a class="dropdown-item" href="comingsoon.html">Advanced Vietnamese</a>
+                </div>
+            </li>
+            <!-- PRICING -->
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <!-- DISCOVER -->
+            <li class="nav-item">
+              <a class="nav-link" href="discover.html">Discover</a>
+            </li>
+            <!--Button -->
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+              <!-- SIGN UP -->
+              <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#sign-up">Sign up</button>
+              </div>
+              <!-- SIGN UP modal -->
+              <div class="modal" id="sign-up">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                      <!-- Close -->
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <br>
+                      <!-- LOGO -->
+                      <img src="images/LOGO blue transparent.png" class="center-block">
+                      <!-- SIGN UP form -->
+                      <form class="px-4 py-3">
+                        <!-- First name & Last name -->
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="Firstname">First name</label>
+                            <input type="text" class="form-control" id="Firstname" placeholder="First name" required>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="Lastname">Last name</label>
+                            <input type="text" class="form-control" id="Lastname" placeholder="Last name" required>
+                          </div>
+                        </div>
+                        <!-- Gender -->
+                        <div class="form-group">
+                          <label for="Gender">Gender</label>
+                          <select class="custom-select" id="Gender" required>
+                            <option selected disabled value="">Choose...</option>
+                              <option>Male</option>
+                              <option>Female</option>
+                          </select>
+                        </div>
+                        <!-- Date of Birth -->
+                        <div class="form-group">
+                          <lable for="DOB">Date of Birth</lable>
+                          <input type="date" class="form-control" id="DOB" required>
+                        </div>
+                        <!-- Email -->
+                        <div class="form-group">
+                          <label for="Email">Email address</label>
+                          <input type="email" class="form-control" id="Email" placeholder="email@example.com" required>
+                        </div>
+                        <!-- Passwork -->
+                        <div class="form-group">
+                          <label for="Password">Password</label>
+                          <input type="password" class="form-control" id="Password" placeholder="Password" required>
+                        </div>
+                        <!-- Confirm passwork -->
+                        <div class="form-group">
+                          <label for="Confirm">Confirm Password</label>
+                          <input type="password" class="form-control" id="Confirm" placeholder="Confirm Password" required>
+                        </div>
+                        <!-- Terms of service -->
+                        <p>By clicking
+                        <em>Sign up</em> you agree to our
+                        <a href="#">terms of service</a>
+                        <!-- Sign up button -->
+                        <div class="text-center">
+                          <button type="submit" class="btn btn-primary btn-lg btn-block">Sign up</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- LOG IN -->
+              <div class="btn-group mr-2" role="group" aria-label="Second group">
+                <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#log-in">Log in</button>
+              </div>
+              <!-- LOG IN modal -->
+              <div class="modal" id="log-in">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                      <!-- Close -->
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <br>
+                      <!-- LOGO -->
+                      <img src="images/LOGO blue transparent.png" class="center-block">
+                      <!-- LOG IN form -->
+                      <form class="px-4 py-3">
+                        <div class="form-group">
+                          <label for="Email">Email address</label>
+                          <input type="email" class="form-control" id="Email" placeholder="email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="Password">Password</label>
+                          <input type="password" class="form-control" id="Password" placeholder="Password" required>
+                        </div>
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="Check">
+                            <label class="form-check-label" for="Check">
+                              Remember me
+                            </label>
+                          </div>
+                        </div>
+                        <div class="text-center">
+                          <button type="submit" class="btn btn-outline-secondary btn-lg btn-block">Log in</button>
+                          <p></p>
+                          <p>New around here? <a href="#">Sign up</a></p>
+                          <a href="#">Forgot password?</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- COMING SOON -->
+    <div class="bgimg">
+      <div class="middle">
+        <p style="color: rgba(255, 255, 255, 0.63);">We are</p>
+        <h1>COMING SOON</h1>
+        <hr>
+        <div class="progress" style="height: 20px;">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <p style="color: rgba(255, 255, 255, 0.63);">Our team are working hard on bringing you the best courses. Stay tuned for something amazing!</p>
+        <div class="row justify-content-center">
+          <div class="btn-group mr-2" role="group" aria-label="First group">
+            <a class="btn btn-outline-primary" href="#" role="button">Notify me!</a>
+          </div>
+          <div class="btn-group mr-2" role="group" aria-label="Second group">
+            <a class="btn btn-secondary" href="beginners.html" role="button">Other course</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="page-footer font-small bg-light pt-4">
+      <div class="container">
+          <!-- Footer Links -->
+          <div class="container-fluid text-center text-md-left">
+        
+              <!-- Grid row -->
+              <div class="row">
+        
+                  <!-- Cot 1 -->
+                  <div class="col-md-5 mt-md-0 mt-3">
+                  <!-- LOGO -->
+                  <a href="index.html"><img src="images/LOGO blue transparent.png" alt="" width="300px"></a>
+                  <!-- Social -->
+                  <div class="social">
+                    <ul>
+                      <li><a href="https://www.facebook.com/Make-Vietnamese-Easier-121340772596076/"><i class="fa fa-lg fa-facebook"></i></a></li>
+                      <li><a href="https://www.instagram.com/make.vietnamese.easier/?fbclid=IwAR0ujXMujHc8gMQODz-DgXTUxerv5GylgurMwDg1chY2J7WSDuslqxLGaIU"><i class="fa fa-lg fa-instagram"></i></a></li>
+                      <li><a href="https://www.youtube.com/channel/UCATcL05J2R2jO8Ti-PZzONQ"><i class="fa fa-lg fa-youtube"></i></a></li>
+                      <li><a href="mailto:makevietnameseeasier@gmail.com"><i class="fa fa-lg fa-envelope"></i></a></li>
+                    </ul>
+                  </div>
+
+                  </div>
+                  <!-- Grid column -->
+          
+                  <hr class="clearfix w-100 d-md-none pb-3">
+          
+                  <!-- Grid column -->
+                  <div class="col-md-3 mb-md-0 mb-3">
+          
+                  <!-- Cot 2 -->
+                  <h5 class="text-uppercase">Navigate</h5>
+                  <ul class="list-unstyled">
+                      <li>
+                          <a href="index.html">Home</a>
+                      </li>
+                      <li>
+                          <a href="about.html">About</a>
+                      </li>
+                      <li>
+                          <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Courses</a>
+                          <div class="collapse" id="collapseExample">
+                              <a href="beginners.html">Vietnamese for Beginners</a>
+                              <a href="comingsoon.html">Intermediate Vietnamese</a>
+                              <a href="comingsoon.html">Advanced Vietnamese</a>
+                          </div>
+                      </li>
+                      <li>
+                          <a href="pricing.html">Pricing</a>
+                      </li>
+                      <li>
+                          <a href="discover.html">Discover</a>
+                      </li>
+                  </ul>
+        
+              </div>
+        
+              <!-- Cot 3 -->
+              <div class="col-md-4 mb-md-0 mb-3">
+                <!-- Newsletter -->
+                <h5 class="text-uppercase">Newsletter</h5>
+                <p>Stay up to date with our latest news and courses</p>
+                <form class="input-group">
+                  <input type="text" class="form-control form-control-sm" placeholder="Your email"
+                    aria-label="Your email" aria-desjavascript:void(0);cribedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-sm btn-outline-dark my-0" type="submit">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+        
+            </div>
+            <!-- Grid row -->
+        
+          </div>
+          <!-- Footer Links -->
+          <hr class="my-4">
+          <!-- Copyright -->
+          <div class="row mt-3 text-muted y-3 d-flex">
+              <p class="mx-auto">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart text-primary mx-1"></i> by thaopham311</p>    
+          </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

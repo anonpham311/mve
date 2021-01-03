@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--load font awesome-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- GG FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- selfmade CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FROALA CSS -->
+    <link type="text/css" rel="stylesheet" href="css/froala_blocks.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/FAVICON.png" type="images/png">
+
+    <title>Make Vietnamese Easier - Pricing</title>
+    <style>
+      .fdb-block {
+        border-bottom: 1px solid var(--light);
+      }
+      /* Steps */
+      .step {
+        list-style: none;
+        margin: 0;
+      }
+
+      .step-element {
+        display: flex;
+        padding: 1rem 0;
+      }
+
+      .step-number {
+        position: relative;
+        width: 7rem;
+        flex-shrink: 0;
+        text-align: center;
+      }
+
+      .step-number .number {
+        color: #bfc5ca;
+        background-color: #eaeff4;
+        font-size: 1.5rem;
+      }
+
+      .step-number .number {
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+      }
+
+      .number {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 38px;
+        border-radius: 10rem;
+      }
+
+      .step-number::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 48px;
+        bottom: -2rem;
+        margin-left: -1px;
+        border-left: 2px dashed #eaeff4;
+      }
+
+      .step .step-element:last-child .step-number::before {
+        bottom: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- LOGO HEADER -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/LOGO blue transparent.png" width="135" height="60" class="d-inline-block align-top" alt="" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- NAVS -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <!-- HOME -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <!-- ABOUT -->
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <!-- COURSES -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Courses
+              </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="beginners.html">Vietnamese for Beginners</a>
+                  <a class="dropdown-item" href="comingsoon.html">Intermediate Vietnamese</a>
+                  <a class="dropdown-item" href="comingsoon.html">Advanced Vietnamese</a>
+                </div>
+            </li>
+            <!-- PRICING -->
+            <li class="nav-item active">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <!-- DISCOVER -->
+            <li class="nav-item">
+              <a class="nav-link" href="discover.html">Discover</a>
+            </li>
+            <!--Button -->
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+              <!-- SIGN UP -->
+              <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#sign-up">Sign up</button>
+              </div>
+              <!-- SIGN UP modal -->
+              <div class="modal" id="sign-up">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                      <!-- Close -->
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <br>
+                      <!-- LOGO -->
+                      <img src="images/LOGO blue transparent.png" class="center-block">
+                      <!-- SIGN UP form -->
+                      <form class="px-4 py-3">
+                        <!-- First name & Last name -->
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="Firstname">First name</label>
+                            <input type="text" class="form-control" id="Firstname" placeholder="First name" required>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="Lastname">Last name</label>
+                            <input type="text" class="form-control" id="Lastname" placeholder="Last name" required>
+                          </div>
+                        </div>
+                        <!-- Gender -->
+                        <div class="form-group">
+                          <label for="Gender">Gender</label>
+                          <select class="custom-select" id="Gender" required>
+                            <option selected disabled value="">Choose...</option>
+                              <option>Male</option>
+                              <option>Female</option>
+                          </select>
+                        </div>
+                        <!-- Date of Birth -->
+                        <div class="form-group">
+                          <lable for="DOB">Date of Birth</lable>
+                          <input type="date" class="form-control" id="DOB" required>
+                        </div>
+                        <!-- Email -->
+                        <div class="form-group">
+                          <label for="Email">Email address</label>
+                          <input type="email" class="form-control" id="Email" placeholder="email@example.com" required>
+                        </div>
+                        <!-- Passwork -->
+                        <div class="form-group">
+                          <label for="Password">Password</label>
+                          <input type="password" class="form-control" id="Password" placeholder="Password" required>
+                        </div>
+                        <!-- Confirm passwork -->
+                        <div class="form-group">
+                          <label for="Confirm">Confirm Password</label>
+                          <input type="password" class="form-control" id="Confirm" placeholder="Confirm Password" required>
+                        </div>
+                        <!-- Terms of service -->
+                        <p>By clicking
+                        <em>Sign up</em> you agree to our
+                        <a href="#">terms of service</a>
+                        <!-- Sign up button -->
+                        <div class="text-center">
+                          <button type="submit" class="btn btn-primary btn-lg btn-block">Sign up</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- LOG IN -->
+              <div class="btn-group mr-2" role="group" aria-label="Second group">
+                <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#log-in">Log in</button>
+              </div>
+              <!-- LOG IN modal -->
+              <div class="modal" id="log-in">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                      <!-- Close -->
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <br>
+                      <!-- LOGO -->
+                      <img src="images/LOGO blue transparent.png" class="center-block">
+                      <!-- LOG IN form -->
+                      <form class="px-4 py-3">
+                        <div class="form-group">
+                          <label for="Email">Email address</label>
+                          <input type="email" class="form-control" id="Email" placeholder="email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="Password">Password</label>
+                          <input type="password" class="form-control" id="Password" placeholder="Password" required>
+                        </div>
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="Check">
+                            <label class="form-check-label" for="Check">
+                              Remember me
+                            </label>
+                          </div>
+                        </div>
+                        <div class="text-center">
+                          <button type="submit" class="btn btn-outline-secondary btn-lg btn-block">Log in</button>
+                          <p></p>
+                          <p>New around here? <a href="#">Sign up</a></p>
+                          <a href="#">Forgot password?</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CARD IMAGE OVERLAY -->
+    <div class="card bg-dark text-white border-0">
+        <img src="images/cardimage-home.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay" style="overflow:auto;">
+        <div class="container d-flex h-100">
+            <div class="align-self-center text-dark">
+            <h1 class="card-title text-uppercase">Don't let <span style="background: #ffc561;">covid-19</span> <br>stop the learning</h1>
+            <p class="card-text">Education is not just about going to school and <br>getting a degree. It's about widening your knowledge <br>and absorbing the truth about life. Knowledge is power</p>
+            <a class="btn btn-lg btn-danger" href="#pricing" role="button" style="background: linear-gradient(0deg, rgba(50,162,237,1) 0%, rgba(36,75,148,1) 100%); border: 0;">Learn now</a>
+            </div>
+        </div>
+        </div>
+    </div>
+  
+    <!-- PRICING (Pricings 10) -->
+    <div id="pricing">
+        <section class="fdb-block">
+            <div class="container">
+                <!-- TITLE -->
+                <h1 class="font-weight-bold text-center dark-grey-text pb-2"><span style="border-bottom: 5px solid #32a2ed;">Subscription Levels</span></h1>
+                <!-- TABLE TREN MAY TINH -->
+                <table class="table text-center mt-5 d-none d-lg-table">
+                <tbody>
+                <!-- HANG 1 -->
+                <tr>
+                    <th scope="row" class="border-0"></th>
+                    <!-- FREE -->
+                    <td class="text-center border-0">
+                    <h2 class="font-weight-light">FREE</h2>
+                    <p class="lead">$0/month</p>
+                    <p><a href="beginners.html" class="btn btn-outline-primary">Get Started</a></p>
+                    </td>
+                    <!-- BASIC -->
+                    <td class="text-center border-0">
+                    <h2 class="font-weight-light">BASIC</h2>
+                    <p class="lead">$20/month</p>
+                    <p><a href="#steps" class="btn btn-outline-primary">Get Started</a></p>
+                    </td>
+                    <!-- PREMIUM -->
+                    <td class="text-center border-0">
+                    <h2 class="font-weight-light">PREMIUM</h2>
+                    <p class="lead">$35/month</p>
+                    <p><a href="#steps" class="btn btn-primary">Get Started</a></p>
+                    </td>
+                </tr>
+                <!-- HANG 2 -->
+                <tr>
+                    <th scope="row">Video lesson(s) every week</th>
+                    <td>1 video</td>
+                    <td>3 videos</td>
+                    <td>3 videos</td>
+                </tr>
+                <!-- HANG 3 -->
+                <tr>
+                    <th scope="row">Homework every week</th>
+                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                </tr>
+                <!-- HANG 4 -->
+                <tr>
+                    <th scope="row">Homework checking system</th>
+                    <td></td>
+                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                </tr>
+                <!-- HANG 5 -->
+                <tr>
+                    <th scope="row">Group online class</th>
+                    <td></td>
+                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                </tr>
+                <!-- HANG 6 -->
+                <tr>
+                    <th scope="row">1-on-1 online class</th>
+                    <td></td>
+                    <td></td>
+                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                </tr>
+                </tbody>
+            </table>
+            <!-- TABLE TREN DIEN THOAI - FREE -->
+            <table class="table text-center mt-5 d-table d-lg-none">
+                <tbody>
+                <tr>
+                    <td class="text-center border-0" colspan="2">
+                    <h2 class="font-weight-light">FREE</h2>
+                    <p class="h2">$0/month</p>
+                    <p><a href="beginners.html" class="btn btn-outline-primary">Get Started</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Video lesson(s) every week</th>
+                    <td>1 video</td>
+                </tr>
+                <tr>
+                    <th scope="row">Homework every week</th>
+                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">Homework checking system</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">Group online class</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">1-on-1 online class</th>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+            <!-- TABLE TREN DIEN THOAI - BASIC -->
+            <table class="table text-center mt-5 d-table d-lg-none">
+                <tbody>
+                <tr>
+                    <td class="text-center" colspan="2">
+                    <h2 class="font-weight-light">BASIC</h2>
+                    <p class="h2">$20/month</p>
+                    <p><a href="#steps" class="btn btn-outline-primary">Get Started</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Video lesson(s) every week</th>
+                    <td>3 videos</td>
+                </tr>
+                <tr>
+                    <th scope="row">Homework every week</th>
+                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">Homework checking system</th>
+                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">Group online class</th>
+                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">1-on-1 online class</th>
+                    <td></td>
+                </tr>
+                <tr>
+                </tbody>
+            </table>
+            <!-- TABLE TREN DIEN THOAI - PREMIUM -->
+            <table class="table text-center mt-5 d-table d-lg-none">
+                <tbody>
+                <tr>
+                    <td class="text-center" colspan="2">
+                    <h2 class="font-weight-light">PREMIUM</h2>
+                    <p class="h2">$35/month</p>
+                    <p><a href="#steps" class="btn btn-primary">Get Started</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Video lesson(s) every week</th>
+                    <td>3 videos</td>
+                </tr>
+                <tr>
+                    <th scope="row">Homework every week</th>
+                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">Homework checking system</th>
+                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">Group online class</th>
+                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">1-on-1 online class</th>
+                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                </tr>
+                </tbody>
+            </table>
+        
+            </div>
+        </section>
+    </div>
+
+    <!-- 3 STEPS -->
+    <div id="steps">
+        <section class="fdb-block">
+            <div class="container">
+                <!-- TITLE -->
+                <h1 class="font-weight-bold text-center dark-grey-text pb-2"><span style="border-bottom: 5px solid #32a2ed;">Three Easy Steps</span></h1>
+                <p class="lead text-center text-muted pt-2 mb-5">Start your Vietnamese learning process with just a few clicks.</p>
+                <div class="row align-items-center">
+                    <!-- HINH -->
+                    <div class="col-lg-6 mb-4">
+                        <img src="images/steps.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 mb-4">
+
+                        <ol class="step pl-0">
+                        <!-- STEP 1 -->
+                        <li class="step-element pb-0">
+                            <div class="step-number">
+                            <span class="number">1</span>
+                            </div>
+                            <div class="step-excerpt">
+                            <h3 class="font-weight-bold dark-grey-text mb-3">Finish the entrance test</h3>
+                            <p class="text-muted"><a href="https://bit.ly/3cytqjL">Click here to do the entrance test</a> so that we can find a class that suits your level.</p>
+                            </div>
+                        </li>
+                        <!-- STEP 2 -->
+                        <li class="step-element pb-0">
+                            <div class="step-number">
+                            <span class="number">2</span>
+                            </div>
+                            <div class="step-excerpt">
+                            <h3 class="font-weight-bold dark-grey-text mb-3">Fill out the payment form</h3>
+                            <p class="text-muted"><a href="#payment">Select a payment method and let us know your information.</a></p>
+                            </div>
+                        </li>
+                        <!-- STEP 3 -->
+                        <li class="step-element pb-0">
+                            <div class="step-number">
+                            <span class="number">3</span>
+                            </div>
+                            <div class="step-excerpt">
+                            <h3 class="font-weight-bold dark-grey-text mb-3">Verify your payment details</h3>
+                            <p class="text-muted">We will send you an email as soon as you submit the payment form. You need to verify that email in <strong>48 hours</strong> or the payment will be <em>canceled</em>.</p>
+                            </div>
+                        </li>
+                        </ol>
+                
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- PAYEMNT FORM -->
+    <div id="payment">
+        <section class="fdb-block">
+            <div class="container">
+                <!-- TITLE -->
+                <h1 class="font-weight-bold text-center dark-grey-text pb-2"><span style="border-bottom: 5px solid #32a2ed;">Payment Form</span></h1>
+                <form class="px-4 py-3">
+                    <!-- SUBTITLE 1 -->
+                    <p class="lead" style="color: #ffc700;">Personal Information</p>
+                    <!-- First name & Last name -->
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="Firstname">First Name</label>
+                            <input type="text" class="form-control" id="Firstname" placeholder="First name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="Lastname">Last Name</label>
+                            <input type="text" class="form-control" id="Lastname" placeholder="Last name" required>
+                        </div>
+                    </div>
+                    <!-- Gender -->
+                    <div class="form-group">
+                        <label for="Gender">Gender</label>
+                        <select class="custom-select" id="Gender" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+                    <!-- Date of Birth -->
+                    <div class="form-group">
+                        <lable for="DOB">Date of Birth</lable>
+                        <input type="date" class="form-control" id="DOB" required>
+                    </div>
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="Email">Email Address</label>
+                        <input type="email" class="form-control" id="Email" placeholder="email@example.com" required>
+                    </div>
+                    <!-- Passwork -->
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="Password">Password</label>
+                            <input type="password" class="form-control" id="Password" placeholder="Password" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="Confirm">Confirm Password</label>
+                            <input type="password" class="form-control" id="Confirm" placeholder="Confirm Password" required>
+                        </div>
+                    </div>
+                    <!-- LOG IN -->
+                    <p>Already have an account?
+                    <a href="#" data-toggle="modal" data-target="#log-in">Log in</a>
+                    <!-- Subscription level -->
+                    <div class="form-group">
+                        <label for="Subscription">Subscription Level</label>
+                        <select class="custom-select" id="Subscription" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>Basic</option>
+                            <option>Premium</option>
+                        </select>
+                    </div>
+
+                    <!-- SUBTITLE 2 -->
+                    <p class="lead" style="color: #ffc700;">Card Credit Details</p>
+                    <!-- Type of Card -->
+                    <div class="form-group">
+                        <label for="Cardtype">Type of Card</label>
+                        <select class="custom-select" id="Cardtype" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>Visa</option>
+                            <option>MasterCard</option>
+                            <option>American Express</option>
+                            <option>JCB</option>
+                        </select>
+                    </div>
+                    <!-- Card Number -->
+                    <div class="form-group">
+                        <label for="Cardnumber">Card Number</label>
+                        <input type="number" class="form-control" id="Cardnumber" placeholder="Card Number" required>
+                    </div>
+                    <!-- Card Holder Name -->
+                    <div class="form-group">
+                        <label for="Cardname">Card Holder Name</label>
+                        <input type="text" class="form-control" id="Cardname" placeholder="Card Holder Name" required>
+                    </div>
+                    <!-- Expiration Date -->
+                    <div class="form-group">
+                        <lable for="Expiration">Expiration Date</lable>
+                        <input type="date" class="form-control" id="Expiration" required>
+                    </div>
+                    <!-- CVC Code -->
+                    <div class="form-group">
+                        <label for="CVC">CVC Code</label>
+                        <input type="number" class="form-control" id="CVC" placeholder="CVC Code" required>
+                    </div>
+                    <!-- Term of service -->
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="Check">
+                        <label class="form-check-label" for="Check">
+                          By purchasing I agree to the <a href="#">term of service</a>
+                        </label>
+                      </div>
+
+                    
+                    <!-- SUBMIT button -->
+                    <br>
+                    <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#submit">Submit</button>
+                    </div>
+                    <!-- SUBMIT modal -->
+                    <div class="modal" id="submit">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal Body -->
+                            <div class="modal-body">
+                            <!-- Close -->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <br>
+                            <!-- LOGO -->
+                            <img src="images/mail-icon.gif" class="center-block">
+                            <!-- LOG IN form -->
+                                <div class="text-center">
+                                <h2>Your email has been sent!</h2>
+                                <p>If you do not receive the confirmation message within a few minutes of submitting, please check your email spam or junk folder. Make sure to verify it in 48 hours to complete your payment.</p>
+                                <button type="submit" class="btn btn-outline-primary btn-lg" data-dismiss="modal">Got it!</button>
+                                <br>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>            
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- SIGN UP FOR FREE -->
+    <div class="card border-0">
+        <img src="images/bg-free.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay" style="overflow:auto;">
+        <div class="container d-flex h-100">
+            <div class="col-12 align-self-center text-center">
+            <h1 class="card-title" style="color: #ffc700;">Can't make up your mind?</h1>
+            <p class="lead card-text text-white">How about trying a 1-on-1 online meeting for free and getting 10% of all courses?<br>This offer is only for 10 first customers who sign up in October 2020.</p>
+            <a class="btn btn-lg btn-danger text-dark" href="#" role="button" data-toggle="modal" data-target="#sign-up" style="background: #ffc700; border: none;">I love it!</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+
+    <!-- FOOTER -->
+    <footer class="page-footer font-small bg-light pt-4">
+      <div class="container">
+          <!-- Footer Links -->
+          <div class="container-fluid text-center text-md-left">
+        
+              <!-- Grid row -->
+              <div class="row">
+        
+                  <!-- Cot 1 -->
+                  <div class="col-md-5 mt-md-0 mt-3">
+                  <!-- LOGO -->
+                  <a href="index.html"><img src="images/LOGO blue transparent.png" alt="" width="300px"></a>
+                  <!-- Social -->
+                  <div class="social">
+                    <ul>
+                      <li><a href="https://www.facebook.com/Make-Vietnamese-Easier-121340772596076/"><i class="fa fa-lg fa-facebook"></i></a></li>
+                      <li><a href="https://www.instagram.com/make.vietnamese.easier/?fbclid=IwAR0ujXMujHc8gMQODz-DgXTUxerv5GylgurMwDg1chY2J7WSDuslqxLGaIU"><i class="fa fa-lg fa-instagram"></i></a></li>
+                      <li><a href="https://www.youtube.com/channel/UCATcL05J2R2jO8Ti-PZzONQ"><i class="fa fa-lg fa-youtube"></i></a></li>
+                      <li><a href="mailto:makevietnameseeasier@gmail.com"><i class="fa fa-lg fa-envelope"></i></a></li>
+                    </ul>
+                  </div>
+
+                  </div>
+                  <!-- Grid column -->
+          
+                  <hr class="clearfix w-100 d-md-none pb-3">
+          
+                  <!-- Grid column -->
+                  <div class="col-md-3 mb-md-0 mb-3">
+          
+                  <!-- Cot 2 -->
+                  <h5 class="text-uppercase">Navigate</h5>
+                  <ul class="list-unstyled">
+                      <li>
+                          <a href="index.html">Home</a>
+                      </li>
+                      <li>
+                          <a href="about.html">About</a>
+                      </li>
+                      <li>
+                          <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Courses</a>
+                          <div class="collapse" id="collapseExample">
+                              <a href="beginners.html">Vietnamese for Beginners</a>
+                              <a href="comingsoon.html">Intermediate Vietnamese</a>
+                              <a href="comingsoon.html">Advanced Vietnamese</a>
+                          </div>
+                      </li>
+                      <li>
+                          <a href="pricing.html">Pricing</a>
+                      </li>
+                      <li>
+                          <a href="discover.html">Discover</a>
+                      </li>
+                  </ul>
+        
+              </div>
+        
+              <!-- Cot 3 -->
+              <div class="col-md-4 mb-md-0 mb-3">
+                <!-- Newsletter -->
+                <h5 class="text-uppercase">Newsletter</h5>
+                <p>Stay up to date with our latest news and courses</p>
+                <form class="input-group">
+                  <input type="text" class="form-control form-control-sm" placeholder="Your email"
+                    aria-label="Your email" aria-desjavascript:void(0);cribedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-sm btn-outline-dark my-0" type="submit">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+        
+            </div>
+            <!-- Grid row -->
+        
+          </div>
+          <!-- Footer Links -->
+          <hr class="my-4">
+          <!-- Copyright -->
+          <div class="row mt-3 text-muted y-3 d-flex">
+              <p class="mx-auto">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart text-primary mx-1"></i> by thaopham311</p>    
+          </div>
+        </div>
+    </footer>
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
